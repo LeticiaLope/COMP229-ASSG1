@@ -1,9 +1,13 @@
 {
-  "name": "horizontal-structure",
-  "version": "0.0.0",
+  "name": "comp229-assg1",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server2.js"
+  },
+  "engines": {
+    "node": "^12.00.0",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
@@ -17,5 +21,18 @@
     "mongoose": "^5.10.7",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "assignment 1 for comp229",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeticiaLope/COMP229-ASSG1.git"
+  },
+  "author": "Leticia Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeticiaLope/COMP229-ASSG1/issues"
+  },
+  "homepage": "https://github.com/LeticiaLope/COMP229-ASSG1#readme"
 }
