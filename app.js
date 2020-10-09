@@ -1,9 +1,12 @@
+//<!--app.js, Leticia Lopez, 301087698, 09-10-2020-->
 //installed third party pckgs
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
+const router = express.Router();//test
+
 //routers
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
@@ -20,6 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); //everything inside public folder is static path
 app.use(express.static(path.join(__dirname, 'node_modules')));
+app.use(express.static('views')); //test
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -30,6 +34,9 @@ app.use(function(req, res, next) {
 });
 //call public folder
 app.use( express.static( "public" ) );
+
+//call views folder
+app.use(express.static("views"));
 
 
 
@@ -42,6 +49,9 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error', { title: 'Error'});
+
+  
+
 });
 
 module.exports = app;

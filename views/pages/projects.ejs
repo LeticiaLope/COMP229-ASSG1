@@ -1,24 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title><%= title %></title>
-</head>
-<body class="container">
+<!--projects.ejs, Leticia Lopez, 301087698, 09-10-2020-->
+<%- include ../partials/header.ejs%>
 
-<header>
-</header>
+<%- include ../partials/main_nav.ejs%>
 
-<main>
-
-
+        <main class="container" >
+          <div class="jumbotron" style="background-color: #FFD6C3">
+            <h1 class="display-4"  style="color: #FF5733; height: 0px; text-align: center" ><%= title %></h1>
 </div>
-</main>
+  </div>
+    <div class="row">
 
-<footer>
-</footer>
+  <div class="col-sm-4"> 
+        <img src="proj1.png" width="350" height="auto" alt="">    
+      
+    </div>
+    <div class="col-sm-4"> 
+         <img src="proj2.png" width="350" height="auto" alt="">    
+      
+    </div>
 
-</body>
-</html>
+   <div class="col-sm-4"> 
+         <img src="proj3.png" width="350" height="auto" alt="">    
+      
+    </div>
+  
+</div>
+  <br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+  <div class="jumbotron; col-sm-4" style="background-color: #FFD6C3; text-align: Left; padding-top: 20px;">
+      <p><b>Health assitant app</b></br>
+      This app is designed for the public heals institution in my country
+      it's principal objective is to help people track their Health
+      measurements and stay in constant communication with their assigned
+      hospitals and dooctors, some of the features are, booking appontments,
+      getting all the digital documents regarding health registers, and keeping a track of all
+      possible familiar deseases.
+
+     </p>
+      
+    </div>
+   <div class="jumbotron; col-sm-4" style="background-color: #FFD6C3; text-align: Left; padding-top: 20px;">
+      <p><b>Medical Equipment Rental</b></br>
+     This project is designed for a company who rents medical equipment for surgery, 
+it's main purpose is to keep track of every equipment, location, and technician in charge
+of each machine, also manager would be able to register more equipment machines
+and clients would be able to request the rent directly on the app.
+     </p>
+      
+    </div>
+    <div class="jumbotron; col-sm-4" style="background-color: #FFD6C3; text-align: Left; padding-top: 20px;">
+      <p><b>Prevention System</b></br>
+    This project's main purpose id to standarize health information around my
+    country, designing a unique health Id, and national health information
+    for every patient, available for every clinique private or public, withouth
+    the need to keep our own track.
+      </p>
+
+  </div>
+</div>
+
+
+    <%- include ../partials/bottom_nav.ejs%>
+
+  
+    <%- include ../partials/footer.ejs%>

@@ -1,24 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title><%= title %></title>
-</head>
-<body class="container">
+<!--contact.ejs, Leticia Lopez, 301087698, 09-10-2020-->
+<%- include ../partials/header.ejs%>
 
-<header>
-</header>
+<%- include ../partials/main_nav.ejs%>
 
-<main>
-
-
+        <main class="container" >
+          <div class="jumbotron" style="background-color: #FFD6C3">
+            <h1 class="display-4"  style="color: #FF5733; height: 0px; text-align: center" ><%= title %></h1>
 </div>
-</main>
+  <div class="row">
 
-<footer>
-</footer>
+ <div class="jumbotron; col-sm-4" style="background-color: #FFD6C3; text-align: Left; padding-top: 20px; height: 240px;">
+      <h3>Leticia Lopez Castillo</h3>
+      26</br>
+      MX, CDMX </br>
+      <i class="fas fa-sm fa-school"></i> Centennial College</br>
+      <i class="fas fa-sm fa-map-marker-alt"></i> Toronto, On</br>
+      <i class="fas fa-sm fa-mobile-alt"></i> (647) 783 03XX</br>
+      <i class="fas fa-sm fa-envelope"></i> leticia_daniela@live.com </br></p>
+      
+    </div>
+    
+    <div class="jumbotron; col-sm-4" style="background-color: white; text-align: Left; padding-top: 20px;">
+     <table style="width: 100%">
+    <tr>
+    <td id="textBoxContact" style=" width: 715px">
+    
+  <h2>Contact me</h2>
+  
+ 	<form action="mailto:jdoe37@my.centennialcollege.ca" method="post">
+<fieldset style="width: 500px;">
+<legend>Provide Your Personal Info</legend>
+	<label>First Name: </label><input name="txtFirstName" size="25" tabindex="1" type="text"><br>
+	<label>Last Name: </label><input name="txtLastName" size="25" tabindex="2" type="text"><br>
+	<label>Contact me by: </label><input name="contactMe" tabindex="3" type="radio" value="mail"> E-mail
+	<input name="contactMe" tabindex="4" type="radio" value="phone"> Phone<br>
+	<label>Phone: </label><input name="phone" size="12" tabindex="5" type="text"><br>
+	<label>Email: </label><input name="txtEmail" size="30" tabindex="6" type="email" required="required" placeholder="someone@someplace.ca"><br> 
+	<br>
+	<label>Description</label><br><textarea cols="50" name="txtSpecialReq" rows="2" tabindex="7" placeholder="--Please add a brief description of your request.--">
+    </textarea><br>
+   <div class="col-sm-4"> 
+          <input class="btn btn-primary" type="submit" value="Submit">
 
-</body>
-</html>
+
+    </div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+             
+	</fieldset>
+	</form>
+	</td>
+    </table>
+
+  </div>
+</div>
+
+    <%- include ../partials/bottom_nav.ejs%>
+
+  
+    <%- include ../partials/footer.ejs%>

@@ -1,24 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title><%= title %></title>
-</head>
-<body class="container">
+<!--services.ejs, Leticia Lopez, 301087698, 09-10-2020-->
+<%- include ../partials/header.ejs%>
 
-<header>
-</header>
+<%- include ../partials/main_nav.ejs%>
 
-<main>
-
-
+        <main class="container" >
+          <div class="jumbotron" style="background-color: #FFD6C3">
+            <h1 class="display-4"  style="color: #FF5733; height: 0px; text-align: center" ><%= title %></h1>
 </div>
-</main>
+  </div>
+    <div class="row">
 
-<footer>
-</footer>
+  <div class="col-sm-4"> 
+      <img src="adobe.png" width="130" height="130" alt="">    
+        <img src="invision.svg" width="130" height="130" alt="">    
+        <img src="marvel.png" width="130" height="130" alt="">    
+        <img src="sketch.png" width="130" height="130" alt="">    
+    </div>
+    <div class="col-sm-4"> 
+         <img src="csharp.png" width="130" height="130" alt="">    
+        <img src="java.jpg" width="130" height="130" alt="">    
+        <img src="javascript.png" width="130" height="130" alt="">    
+        <img src="html5.webp" width="130" height="130" alt="">    
+    </div>
 
-</body>
-</html>
+    <div class="jumbotron; col-sm-4" style="background-color: #FFD6C3; text-align: Left; padding-top: 20px;">
+      <p><b>DESIGN / DEVELOPMENT</b>
+    <ul>
+  <li>c#, Java</li>
+  <li>Java Script, HTML5, CSS, Bootstrap</li>
+  <li>xD, Photoshop, Illustrator, Dreamweaber</li>
+  <li>sketch, inVision, Marvel app</li>
+  <li>Visual Studio, VS Code, Eclipse, Ms Teams, Visio</li>
+  <li>Office</li>
+
+</ul>
+      </p>
+
+  </div>
+</div>
+
+
+    <%- include ../partials/bottom_nav.ejs%>
+
+  
+    <%- include ../partials/footer.ejs%>

@@ -1,34 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title><%= title %></title>
-</head>
-<body class="container">
+<!--home.ejs, Leticia Lopez, 301087698, 09-10-2020-->
+<%- include ../partials/header.ejs%>
 
-<header>
-</header>
+<%- include ../partials/main_nav.ejs%>
 
-<main>
-
- <div class="jumbotron" style="background-color: #FFD6C3">
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <main class="container" >
+          <div class="jumbotron" style="background-color: #FFD6C3">
+            <h1 class="display-4"  style="color: #FF5733; height: 0px; text-align: center" ><%= title %> / Mission</h1>
+</div>
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+  <div class="jumbotron; col-sm-4" style="background-color: #FFD6C3; text-align: Left; padding-top: 20px;">
+      <p><b>Welcome to my online portfolio</b></br>
+      My name is Leticia Lopez</br>
+      I study Software Engineering Technology </br>
+      in centennial college</br>
+      I have a bachelor degree in design</br>
+      I specialized in web design</br>
+      My stronger developer and design skills are </br>
+      Js, Java, C#, HTML5, CSS, Bootstrap</br>
+      Adobe, InVision, Marvel app and Sketch</br></p>
       
-            <div class="col-sm-4"> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="col-sm-4"> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
+    </div>
+    <div class="col-sm-4"> 
+        <img src="adobe.png" width="130" height="130" alt="">    
+        <img src="invision.svg" width="130" height="130" alt="">    
+        <img src="marvel.png" width="130" height="130" alt="">    
+        <img src="sketch.png" width="130" height="130" alt="">    
+    </div>
 
+    <div class="jumbotron; col-sm-4" style="background-color: #FFD6C3; text-align: Left; padding-top: 20px;">
+      <p><b>MISSION</b></br>
+      My mission is to become a front-end developer</br>
+      and to use both design and programming  </br>
+      to build mobile and desktop apps with a</br>
+      human centered focus, and to benefit everyone</br>
+      </p>
+
+  </div>
+</div>
+<br>
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+  <div class="jumbotron; col-sm-4" style= "text-align: Left; padding-top: 20px;">
+      
+    </div>
+    <div class="col-sm-4"> 
+             <button type="button" class="btn btn-outline-dark" ><a href="/contact" style="color: black;">Contact Page</button>
+
+    </div>
+
+    <div class="jumbotron; col-sm-4" style="text-align: Left; padding-top: 20px;">
+
+
+  </div>
+</div>
 </main>
 
-<footer>
-</footer>
 
-</body>
-</html>
+    <%- include ../partials/bottom_nav.ejs%>
+
+  
+    <%- include ../partials/footer.ejs%>

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+//<!--server.ejs, Leticia Lopez, 301087698, 09-10-2020-->
 /**
  * Module dependencies.
  */
@@ -29,6 +29,11 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
+
+app.get('/aboutme', (req, res) => {
+  res.render('aboutme');
+  //res.send('Here you will find info about me');
+});
 /**
  * Normalize a port into a number, string, or false.
  */

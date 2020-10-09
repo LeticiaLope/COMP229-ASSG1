@@ -35,9 +35,15 @@ app.get('/home', (req, res) => {
     res.send('Welcome to my home page');
 });
 
-app.get('/aboutme', (req, res) => {
-    res.send('Here you will find info about me');
-});
+/*app.get('/aboutme', (req, res) => {
+    res.render('aboutme');
+    //res.send('Here you will find info about me');
+});*/
+//test
+router.get('/aboutme', (req, res, next) => {
+    res.sendFile('aboutme.ejs', {root: 'C:\LeticiaLopez\Horizontal Structure\views\pages'});
+})
+app.use('/html', router);
 
 app.get('/projects', (req, res) => {
     res.send('This are some of my projects');

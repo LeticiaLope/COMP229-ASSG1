@@ -1,24 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title><%= title %></title>
-</head>
-<body class="container">
+<!--aboutme.ejs, Leticia Lopez, 301087698, 09-10-2020-->
+<%- include ../partials/header.ejs%>
 
-<header>
-</header>
+<%- include ../partials/main_nav.ejs%>
 
-<main>
-
-
+        <main class="container" >
+          <div class="jumbotron" style="background-color: #FFD6C3">
+            <h1 class="display-4"  style="color: #FF5733; height: 0px; text-align: center" ><%= title %></h1>
 </div>
+  </div>
+  <div class="row">
+      <div class="jumbotron; col-sm-4" style=" text-align: center; padding-top: 20px;">
+
+        <img src="danyphoto.jpeg" width="200" height="auto" alt="">    
+        
+    </div>
+    <div class="col-sm-4"> 
+        <h3>Leticia Lopez Castillo</h3>
+      26</br>
+      MX, CDMX </br>
+      <i class="fas fa-sm fa-school"></i> Centennial College</br>
+      <i class="fas fa-sm fa-map-marker-alt"></i> Toronto, On</br>
+      <i class="fas fa-sm fa-mobile-alt"></i> (647) 783 03XX</br>
+      <i class="fas fa-sm fa-envelope"></i> leticia_daniela@live.com </br></p>
+
+    </div>
+     <div class="jumbotron; col-sm-4" style="background-color: #FFD6C3; text-align: Left; padding-top: 20px; padding-bottom; height:240px;">
+      <p><b>Who am I?</b></br>
+      2 years of professional experience </br>
+      Hardworking and passionate</br>
+      Always willing to learn more</br>
+      Resume:</br>
+      <a href="https://drive.google.com/file/d/1FZOZT6H71ehGcWvgE62NVaDjykBjPUey/view?usp=sharing">resumeLeticia.pdf</a></br>
+
+<br>
+      Hobbies: music, paint, dance, exercise</br>
+    
+      </p>
+
+  </div>
+  </div>
+</div>
+
+
 </main>
 
-<footer>
-</footer>
 
-</body>
-</html>
+    <%- include ../partials/bottom_nav.ejs%>
+
+  
+    <%- include ../partials/footer.ejs%>
