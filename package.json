@@ -1,11 +1,11 @@
 {
-  "name": "comp229-assg1",
+   "name": "horizontal-structure",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server2.js"
   },
-  "engines": {
+ "engines": {
     "node": "^12.18.3",
     "npm": "^6.0.0"
   },
@@ -22,7 +22,7 @@
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "description": "assignment 1 for comp229",
+ "description": "assignment 1 for comp229",
   "main": "index.js",
   "devDependencies": {},
   "repository": {
