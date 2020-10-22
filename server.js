@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('./app');
+var app = require('./server/config/app');
 var debug = require('debug')('horizontal-structure:server');
 var http = require('http');
 
@@ -30,10 +30,6 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 
-app.get('/aboutme', (req, res) => {
-  res.render('aboutme');
-  //res.send('Here you will find info about me');
-});
 /**
  * Normalize a port into a number, string, or false.
  */

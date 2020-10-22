@@ -1,11 +1,11 @@
 {
-   "name": "horizontal-structure",
+  "name": "horizontal-structure",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
   },
- "engines": {
+  "engines": {
     "node": "^12.18.3",
     "npm": "^6.0.0"
   },
@@ -18,11 +18,13 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jquery": "^3.5.1",
-    "mongoose": "^5.10.7",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.9",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
- "description": "assignment 1 for comp229",
+  "description": "assignment 1 for comp229",
   "main": "index.js",
   "devDependencies": {},
   "repository": {
