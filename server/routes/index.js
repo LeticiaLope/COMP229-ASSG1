@@ -1,42 +1,31 @@
 //<!--index.js, Leticia Lopez, 301087698, 09-10-2020-->
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('pages/home', { title: 'Home'});
-});
+let indexController = require('../controllers/index');
 
 /* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render('pages/home', { title: 'Home'});
-});
+router.get('/', indexController.displayHomePage);
 
-/* GET About Me page. */
-router.get('/aboutme', function(req, res, next) {
-  res.render('pages/aboutme', { title: 'About Me'});
-});
+/* GET home page. */
+router.get('/home', indexController.displayHomePage);
 
-/* GET Projects page. */
-router.get('/projects', function(req, res, next) {
-  res.render('pages/projects', { title: 'Projects'});
-});
+/* GET About Us page. */
+router.get('/aboutme', indexController.displayAboutMePage);
+
+/* GET Products page. */
+router.get('/projects', indexController.displayProjectsPage);
 
 /* GET Services page. */
-router.get('/services', function(req, res, next) {
-  res.render('pages/services', { title: 'Services'});
-});
+router.get('/services', indexController.displayServicesPage);
 
-/* GET Contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('pages/contact', { title: 'Contact'});
-});
+/* GET Contact Us page. */
+router.get('/contact', indexController.displayContactPage);
 
 /* GET Secure page. */
-router.get('/secure', function(req, res, next) {
-  res.render('pages/secure', { title: 'Secure Section'});
-});
+router.get('/secure', indexController.displaySecurePage);
 
 module.exports = router;
+
+
