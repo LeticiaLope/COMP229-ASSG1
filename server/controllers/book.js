@@ -5,6 +5,7 @@ let mongoose = require('mongoose');
 // create a reference to the model
 let Book = require('../models/book');
 
+
 module.exports.displayBookList = (req, res, next) => {
     Book.find((err, bookList) => {
         if(err)
@@ -15,13 +16,17 @@ module.exports.displayBookList = (req, res, next) => {
         {
             //console.log(BookList);
 
-            res.render('book/list', {title: 'Books', BookList: bookList});      
+            res.render('book/list', 
+            {title: 'Books', 
+            BookList: bookList, 
+            displayName: req.user ? req.user.displayName : ''});      
         }
     });
 }
 
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('book/add', {title: 'Add Book'})          
+    res.render('book/add', {title: 'Add Book', 
+    displayName: req.user ? req.user.displayName : ''})          
 }
 
 module.exports.processAddPage = (req, res, next) => {
@@ -48,6 +53,7 @@ module.exports.processAddPage = (req, res, next) => {
 
 }
 
+
 module.exports.displayEditPage = (req, res, next) => {
     let id = req.params.id;
 
@@ -60,7 +66,8 @@ module.exports.displayEditPage = (req, res, next) => {
         else
         {
             //show the edit view
-            res.render('book/edit', {title: 'Edit Book', book: bookToEdit})
+            res.render('book/edit', {title: 'Edit Book', book: bookToEdit, 
+            displayName: req.user ? req.user.displayName : ''})
         }
     });
 }
@@ -76,7 +83,7 @@ module.exports.processEditPage = (req, res, next) => {
         "description": req.body.description,
         "price": req.body.price
     });
-
+    
     Book.updateOne({_id: id}, updatedBook, (err) => {
         if(err)
         {

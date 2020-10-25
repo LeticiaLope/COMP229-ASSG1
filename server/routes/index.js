@@ -26,6 +26,21 @@ router.get('/contact', indexController.displayContactPage);
 /* GET Secure page. */
 router.get('/secure', indexController.displaySecurePage);
 
+/* GET Route for displaying the Login page */
+router.get('/login', indexController.displayLoginPage);
+
+/* POST Route for processing the Login page */
+router.post('/login', indexController.processLoginPage);
+
+/* GET Route for displaying the Register page */
+router.get('/register', indexController.displayRegisterPage);
+
+/* POST Route for processing the Register page */
+router.post('/register', indexController.processRegisterPage);
+
+/* GET to perform  User Logout */
+router.get('/logout', indexController.performLogout);
+
 module.exports = router;
 
 
