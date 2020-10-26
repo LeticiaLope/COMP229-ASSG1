@@ -3,6 +3,10 @@ let router = express.Router();
 let mongoose = require('mongoose');
 let passport = require('passport');
 
+// enable jwt
+let jwt = require('jsonwebtoken');
+let DB = require('../config/db');
+
 //create the user model instance
 let userModel = require('../models/user');
 let User = userModel.User; // alias
@@ -29,6 +33,10 @@ module.exports.displayContactPage = (req, res, next) => {
 
 module.exports.displaySecurePage = (req, res, next) => {
     res.render('pages/secure', { title: 'Secure Section', displayName: req.user ? req.user.displayName : ''});
+}
+
+module.exports.displayUsersPage = (req, res, next) => {
+    res.render('user', { title: 'Users', displayName: req.user ? req.user.displayName : ''});
 }
 
 module.exports.displayLoginPage = (req, res, next) => {
