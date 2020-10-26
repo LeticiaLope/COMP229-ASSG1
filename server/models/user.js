@@ -5,7 +5,7 @@ let passportLocalMongoose = require('passport-local-mongoose');
 let User = mongoose.Schema
 (
     {
-        username:
+        name:
         {
             type: String,
             default: '',
@@ -35,6 +35,13 @@ let User = mongoose.Schema
            default: '',
            trim: true,
            required: "Display name is required"
+       },
+       number:
+       {
+            type: String,
+           default: '',
+           trim: true,
+           required: "Phone number is required"
        },
        created:
        {

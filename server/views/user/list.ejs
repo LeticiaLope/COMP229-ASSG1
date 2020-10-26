@@ -8,7 +8,7 @@
          <div class="offset-md-1 col-md-10">
          <h1><%= title %></h1>
 
-      <% if(typeof displayName == 'string' && displayName) { %>
+      <% if(typeof name == 'string' && name) { %>
          <a href="/users/add" class="btn btn-primary" role="button">
         <i class="fas fa-plus-circle"></i> Add a User </a>
           <% } %>
@@ -16,7 +16,7 @@
         <table class="table table-bordered table-striped table-hover">
         <! -- Header Row -->
         <tr class="d-flex">      
-        <% if(typeof displayName == 'string' && displayName) { %>
+        <% if(typeof name == 'string' && name) { %>
             <th class="text-center col-2">Name</th>
             <th class="text-center col-2">Number</th>
             <th class="text-center col-5">email</th>
@@ -31,7 +31,7 @@
                 <! -- Repeat Template Row -->
                 <% for(let count = 0; count < UserList.length; count++) { %>
                 <tr class="d-flex">
-                  <% if(typeof displayName == 'string' && displayName) { %>
+                  <% if(typeof name == 'string' && name) { %>
                  <td class="text-center col-2"><%= UserList[count].name %></td>
                  <td class="text-center col-2"><%= UserList[count].number %></td>
                  <td class="text-center col-5"><%= UserList[count].email %></td>
